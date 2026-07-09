@@ -1,0 +1,224 @@
+{
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "Fira Code, monospace",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "json.schemas": [],
+    "editor.fontWeight": "600",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontSize": 12,
+    "editor.multiCursorMergeOverlapping": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.preferredHighContrastColorTheme": "Default Dark+",
+    "workbench.preferredHighContrastLightColorTheme": "Default Dark+",
+    "workbench.preferredLightColorTheme": "Default Dark+",
+    "workbench.preferredDarkColorTheme": "Default Dark+",
+    "workbench.colorCustomizations": {
+        "editor.background": "#152b19",
+        "editor.foreground": "#b4befe",
+        "editor.lineHighlightBackground": "#282830",
+        "editorCursor.foreground": "#ffffff",
+        "editor.selectionBackground": "#3c3e4f",
+        "editor.inactiveSelectionBackground": "#2a2b36",
+        "sideBar.background": "#200d01f6",
+        "sideBar.foreground": "#b6dd05",
+        "activityBar.background": "#11111b",
+        "activityBar.foreground": "#cdd6f4",
+        "statusBar.background": "#11111b",
+        "statusBar.foreground": "#a6adc8"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "JSON Key Color",
+                "scope": [
+                    "support.type.property-name.json",
+                    "meta.structure.dictionary.key.json string.quoted.double.json"
+                ],
+                "settings": {
+                    "foreground": "#be2121", // জেসন কি-এর জন্য চমৎকার ব্রাইট সায়ান কালার
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "name": "Keywords like function, class, return",
+                "scope": [
+                    "keyword",
+                    "storage.type",
+                    "storage.modifier"
+                ],
+                "settings": {
+                    "foreground": "#d32c02d8",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "name": "Keywords like import, export, from, if, else",
+                "scope": [
+                    "keyword.control",
+                    "keyword.control.import",
+                    "keyword.control.from",
+                    "keyword.control.flow",
+                    "keyword.operator.comparison", // ===, ==, !==
+                    "keyword.control.conditional", // নিশ্চিত করবে if, else যেন কালার পায়
+                    "keyword.operator.logical", // &&, ||, !
+                ],
+                "settings": {
+                    "foreground": "#c52f55",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "name": "JavaScript Operators and Punctuations (===, &&, ||, ?, :)",
+                "scope": [
+                    "keyword.operator",
+                    "keyword.operator.assignment",
+                    "keyword.operator.relational",
+                ],
+                "settings": {
+                    "foreground": "#2db9b2", // দারুণ গ্লোয়িং সায়ান কালার
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "name": "Strings",
+                "scope": [
+                    "string",
+                    "string.quoted",
+                    "string.template" // JavaScript Template Literals (`${}`)
+                ],
+                "settings": {
+                    "foreground": "#8fc008"
+                }
+            },
+            {
+                "name": "Functions and Methods",
+                "scope": [
+                    "entity.name.function",
+                    "meta.function-call",
+                    "support.function",
+                    "meta.method.declaration"
+                ],
+                "settings": {
+                    "foreground": "#09cab0"
+                }
+            },
+            {
+                "name": "Variables",
+                "scope": [
+                    "variable.other.readwrite",
+                    "variable.other.object",
+                    "variable.other.property"
+                ],
+                "settings": {
+                    "foreground": "#d16b0c"
+                }
+            },
+            {
+                "name": "Numbers",
+                "scope": [
+                    "constant.numeric"
+                ],
+                "settings": {
+                    "foreground": "#d3a409"
+                }
+            },
+            {
+                "name": "Comments",
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment"
+                ],
+                "settings": {
+                    "foreground": "#7f8c8d",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "HTML/JSX Tags",
+                "scope": [
+                    "entity.name.tag"
+                ],
+                "settings": {
+                    "foreground": "#c43636"
+                }
+            },
+            {
+                "name": "Tags Meta",
+                "scope": [
+                    "meta.tag"
+                ],
+                "settings": {
+                    "foreground": "#c72e2e"
+                }
+            },
+            {
+                "name": "HTML/JSX Attributes",
+                "scope": [
+                    "entity.other.attribute-name"
+                ],
+                "settings": {
+                    "foreground": "#09c0a8"
+                }
+            },
+            {
+                "name": "Booleans and Constants",
+                "scope": [
+                    "constant.language.boolean",
+                    "constant.language",
+                    "variable.language.this" // JS এর 'this' কিওয়ার্ড ক্যাচ করবে
+                ],
+                "settings": {
+                    "foreground": "#32ccc4",
+                    "fontStyle": "bold"
+                }
+            },
+            // --- CSS / SCSS / Tailwind Integration ---
+            {
+                "name": "CSS Class and ID Selectors",
+                "scope": [
+                    "entity.other.attribute-name.class.css",
+                    "entity.other.attribute-name.id.css"
+                ],
+                "settings": {
+                    "foreground": "#1fd2ff",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "name": "CSS Property Names",
+                "scope": [
+                    "support.type.property-name.css",
+                    "meta.property-name.css"
+                ],
+                "settings": {
+                    "foreground": "#0dda84"
+                }
+            },
+            {
+                "name": "CSS Property Values and Units",
+                "scope": [
+                    "support.constant.property-value.css",
+                    "keyword.other.unit.css",
+                    "constant.numeric.css"
+                ],
+                "settings": {
+                    "foreground": "#13fdb7"
+                }
+            },
+            {
+                "name": "CSS Strings and URLs",
+                "scope": [
+                    "variable.parameter.url.css",
+                    "string.quoted.double.css",
+                    "string.quoted.single.css"
+                ],
+                "settings": {
+                    "foreground": "#9fd608"
+                }
+            }
+        ]
+    },
+    "git.autofetch": true
+}
